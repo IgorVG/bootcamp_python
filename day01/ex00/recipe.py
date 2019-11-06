@@ -42,9 +42,13 @@ class Recipe:
                       "is %s; Prepare following ingredients: %s"
                       )
         data = (self.name, self.cooking_time, self.cooking_lvl, self.ingredients)
-        to_return = format(format_str % data)
+        format_str = ("To prepare {}, you must plan {} min; Cooking level"
+                      "is {}; Prepare following ingredients: {}"
+                      )
+        #to_return = format(format_str2 % data)
+        to_return = format_str.format(*data)
         if self.description:
-            to_return += print("\nDescription: \n", self.description)
+            to_return += "\nDescription: \n{}". format(self.description)
         return to_return
 
 

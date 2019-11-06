@@ -82,7 +82,7 @@ class Bank(object):
                 account.__dict__.pop(x)
             elif x.startwith('addr'):
                 account.__dict__.pop(x)
-        if not len(dir(accont)) % 2:
+        if not len(accont.__dict__) % 2:
             return False
         else:
             return True

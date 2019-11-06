@@ -4,7 +4,7 @@ from recipe import Recipe
 from book import Book
 
 
-tourte = Recipe(name='tourte a l`epinard', cooking_time=40, cooking_lvl=2, ingredients='patate, carotte', recipe_type='lunch')
+tourte = Recipe(name='tourte a l`epinard', cooking_time=40, cooking_lvl=2, ingredients='patate, carotte', recipe_type='lunch', description='my top 3 recipe')
 
 tiramissu = Recipe(name='tiramissu', cooking_time=30, cooking_lvl=4, ingredients='mascarponne, boudoirs', recipe_type='dessert')
 
